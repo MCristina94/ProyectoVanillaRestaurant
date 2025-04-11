@@ -1,0 +1,89 @@
+:root {
+  --verde: #00a149;
+  --blanco: #fff;
+  --rojo: #881014;
+  --oscuro: #000;
+  --titulos: "Arima Madurai", cursive;
+  --parrafos: "Mulish", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* globales */
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
+h1,
+h2 {
+  font-family: var(--titulos);
+}
+
+h3,
+p,
+a {
+  font-family: var(--parrafos);
+}
+
+.verde {
+  color: var(--verde);
+}
+
+.rojo {
+  color: var(--rojo);
+}
+
+.ocultar {
+  display: none;
+}
+
+/* encabezado */
+.contenido-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-navegacion {
+  background-color: var(--oscuro);
+}
+
+.logo h2,
+.navegacion a {
+  color: var(--blanco);
+}
+
+.navegacion a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.logo h2 {
+  font-size: 3rem;
+}
+
+.menu-hamburguesa span {
+  background-color: var(--blanco);
+  display: block;
+  width: 5rem;
+  height: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
